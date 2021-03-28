@@ -1,0 +1,143 @@
+header img{
+    width: 160px;
+    position: relative;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+form{
+    display: inline-block;
+    border: 2px solid rgba(0, 0, 0, 0.473);
+    min-width: 400px;
+    height: 35px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+}
+
+form input{
+    margin: 0;
+    height: 100%;
+    border: none;
+}
+input[type='search']{
+    width: 87%;
+    border-right:2px solid rgba(0, 0, 0, 0.527);
+}
+nav h2{
+    font-weight: normal;
+    font-size: 18px;
+    margin: 0;
+    padding: 20px;
+}
+nav{
+   text-align: center; 
+   border-top:2px solid rgba(0, 0, 0, 0.473);
+   
+}
+.div{
+    display:flex;
+    align-items: center;
+    margin-left:30px;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    height: 1000px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background: rgba(0, 0, 0, 0.041);
+    align-items: center;
+    grid-gap: 10px;
+}
+.containerflex{
+    display: flex; 
+    align-items: top;
+}
+span{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+div div div img{
+    height: 40px;
+    width:40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+img[alt='thumbnail']{
+    margin-bottom: 0;
+    width: 100%
+}
+h3{
+    margin: 0px;
+    font-weight: normal;
+    font-size: 20px;
+}
+p{
+    opacity: 0.5;
+}
+#btn{
+    font-size: 36px;
+    color: rgba(0, 0, 0, 0.473)
+}
+.z i{
+    font-size: 36px;
+}
+.z{
+    display: flex;
+    width: 200px;
+    justify-content: flex-start;
+    text-align: right;
+}
+*{
+    font-family: sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+@media(max-width:1000px){
+    .container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media(max-width:700px){
+    .container{
+        grid-template-columns: 1fr 1fr ;
+    }
+   
+    header{
+        margin-right: 0px;
+    }
+    form{
+        display: inline-block;
+        border: 2px solid rgba(0, 0, 0, 0.473);
+        min-width: 250px;
+        height: 25px;
+    }
+    
+    form input{
+        margin: 0;
+        height: 100%;
+        border: none;
+    }
+    input[type='search']{
+        width: 87%;
+        border-right:2px solid rgba(0, 0, 0, 0.527);
+    }
+    #btn{
+        font-size: 10px;
+    }
+}
+@media(max-width:600px){
+    .container{
+        grid-template-columns: 1fr ;
+    }
+}
